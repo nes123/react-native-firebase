@@ -13,7 +13,7 @@
 		27CE6A36224923D200222E16 /* remote_config_resource_test.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27CE6A35224923D200222E16 /* remote_config_resource_test.plist */; };
 		27DBE25D2594E43C00CEC69A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27DBE25C2594E43C00CEC69A /* LaunchScreen.storyboard */; };
 		3323F06104C7189BEC46D8B5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3323FFA47718EA67C36AD776 /* Images.xcassets */; };
-		75B65F60D10B0E058935707B /* libPods-testing.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 49579890B62118F02B21DA2B /* libPods-testing.a */; };
+		95BCE8960C7D6CC969576FCA /* libPods-testing.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24EAD61B0A59084B47011F2A /* libPods-testing.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,15 +37,15 @@
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = testing/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = testing/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = testing/main.m; sourceTree = "<group>"; };
+		24EAD61B0A59084B47011F2A /* libPods-testing.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-testing.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27034D93212869A1004B697E /* testing.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = testing.entitlements; path = testing/testing.entitlements; sourceTree = "<group>"; };
 		271CB184206AFCD300EBADF4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		27CE6A35224923D200222E16 /* remote_config_resource_test.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = remote_config_resource_test.plist; sourceTree = "<group>"; };
 		27DBE25C2594E43C00CEC69A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		2867162C3D0FAFF97CDACF63 /* Pods-testing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testing.release.xcconfig"; path = "Target Support Files/Pods-testing/Pods-testing.release.xcconfig"; sourceTree = "<group>"; };
 		30F8459A53F04DD0B22777D1 /* testing.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; path = testing.xcodeproj; sourceTree = "<group>"; };
 		3323FFA47718EA67C36AD776 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = testing/Images.xcassets; sourceTree = "<group>"; };
-		49579890B62118F02B21DA2B /* libPods-testing.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-testing.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		57FE9E835CE2D5A05E92A82C /* Pods-testing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testing.debug.xcconfig"; path = "Target Support Files/Pods-testing/Pods-testing.debug.xcconfig"; sourceTree = "<group>"; };
+		4E1E9B8421555AA1EE54C542 /* Pods-testing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testing.debug.xcconfig"; path = "Target Support Files/Pods-testing/Pods-testing.debug.xcconfig"; sourceTree = "<group>"; };
+		565FD2C5F6EEE72C84BA341C /* Pods-testing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testing.release.xcconfig"; path = "Target Support Files/Pods-testing/Pods-testing.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75B65F60D10B0E058935707B /* libPods-testing.a in Frameworks */,
+				95BCE8960C7D6CC969576FCA /* libPods-testing.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,11 +99,19 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		27AE86A3C17DE4BFDCCE45D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				24EAD61B0A59084B47011F2A /* libPods-testing.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		586E697DCF08C6C9C0C4A20E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				57FE9E835CE2D5A05E92A82C /* Pods-testing.debug.xcconfig */,
-				2867162C3D0FAFF97CDACF63 /* Pods-testing.release.xcconfig */,
+				4E1E9B8421555AA1EE54C542 /* Pods-testing.debug.xcconfig */,
+				565FD2C5F6EEE72C84BA341C /* Pods-testing.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -125,7 +133,7 @@
 				00E356EF1AD99517003FC87E /* testingTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				586E697DCF08C6C9C0C4A20E /* Pods */,
-				FA852143CF443C26B37C6B89 /* Frameworks */,
+				27AE86A3C17DE4BFDCCE45D5 /* Frameworks */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -139,14 +147,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FA852143CF443C26B37C6B89 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				49579890B62118F02B21DA2B /* libPods-testing.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -154,16 +154,16 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "testing" */;
 			buildPhases = (
-				48D3A00041451598A1DBF943 /* [CP] Check Pods Manifest.lock */,
+				D80A4022808E70F0AC2101E8 /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				CC0F353E1D461097008BB94F /* Embed Frameworks */,
 				7D57265F10EEF7CD92D7973F /* Copy Detox Framework */,
-				220D141A442259557E987010 /* [CP] Copy Pods Resources */,
-				DAB1A184ED1FB4A446CF5BBC /* [CP-User] [RNFB] Core Configuration */,
-				8512258DB46D3EF726067919 /* [CP-User] [RNFB] Crashlytics Configuration */,
+				C020305A21B671DFA6EE097C /* [CP] Copy Pods Resources */,
+				F69ACEC66CD810443E68EDFA /* [CP-User] [RNFB] Core Configuration */,
+				80BA72EB5F5C8FC72F7FC14F /* [CP-User] [RNFB] Crashlytics Configuration */,
 			);
 			buildRules = (
 			);
@@ -256,7 +256,35 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
-		220D141A442259557E987010 /* [CP] Copy Pods Resources */ = {
+		7D57265F10EEF7CD92D7973F /* Copy Detox Framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Detox Framework";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "if [ -n \"$DEPLOY_DETOX_FRAMEWORK\" ]; then\nmkdir -p \"${BUILT_PRODUCTS_DIR}\"/\"${FRAMEWORKS_FOLDER_PATH}\"\ncp -r \"${PROJECT_DIR}\"/../node_modules/detox/Detox.framework \"${BUILT_PRODUCTS_DIR}\"/\"${FRAMEWORKS_FOLDER_PATH}\"\nfi\n";
+		};
+		80BA72EB5F5C8FC72F7FC14F /* [CP-User] [RNFB] Crashlytics Configuration */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			name = "[CP-User] [RNFB] Crashlytics Configuration";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/usr/bin/env bash\n#\n# Copyright (c) 2016-present Invertase Limited & Contributors\n#\n# Licensed under the Apache License, Version 2.0 (the \"License\");\n# you may not use this library except in compliance with the License.\n# You may obtain a copy of the License at\n#\n#   http://www.apache.org/licenses/LICENSE-2.0\n#\n# Unless required by applicable law or agreed to in writing, software\n# distributed under the License is distributed on an \"AS IS\" BASIS,\n# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n# See the License for the specific language governing permissions and\n# limitations under the License.\n#\nset -e\n\nif [[ ${PODS_ROOT} ]]; then\n  echo \"info: Exec FirebaseCrashlytics Run from Pods\"\n  \"${PODS_ROOT}/FirebaseCrashlytics/run\"\nelse\n  echo \"info: Exec FirebaseCrashlytics Run from framework\"\n  \"${PROJECT_DIR}/FirebaseCrashlytics.framework/run\"\nfi\n";
+		};
+		C020305A21B671DFA6EE097C /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -273,7 +301,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-testing/Pods-testing-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		48D3A00041451598A1DBF943 /* [CP] Check Pods Manifest.lock */ = {
+		D80A4022808E70F0AC2101E8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -295,35 +323,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7D57265F10EEF7CD92D7973F /* Copy Detox Framework */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Detox Framework";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/bash;
-			shellScript = "if [ -n \"$DEPLOY_DETOX_FRAMEWORK\" ]; then\nmkdir -p \"${BUILT_PRODUCTS_DIR}\"/\"${FRAMEWORKS_FOLDER_PATH}\"\ncp -r \"${PROJECT_DIR}\"/../node_modules/detox/Detox.framework \"${BUILT_PRODUCTS_DIR}\"/\"${FRAMEWORKS_FOLDER_PATH}\"\nfi\n";
-		};
-		8512258DB46D3EF726067919 /* [CP-User] [RNFB] Crashlytics Configuration */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
-				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
-			);
-			name = "[CP-User] [RNFB] Crashlytics Configuration";
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "#!/usr/bin/env bash\n#\n# Copyright (c) 2016-present Invertase Limited & Contributors\n#\n# Licensed under the Apache License, Version 2.0 (the \"License\");\n# you may not use this library except in compliance with the License.\n# You may obtain a copy of the License at\n#\n#   http://www.apache.org/licenses/LICENSE-2.0\n#\n# Unless required by applicable law or agreed to in writing, software\n# distributed under the License is distributed on an \"AS IS\" BASIS,\n# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n# See the License for the specific language governing permissions and\n# limitations under the License.\n#\nset -e\n\nif [[ ${PODS_ROOT} ]]; then\n  echo \"info: Exec FirebaseCrashlytics Run from Pods\"\n  \"${PODS_ROOT}/FirebaseCrashlytics/run\"\nelse\n  echo \"info: Exec FirebaseCrashlytics Run from framework\"\n  \"${PROJECT_DIR}/FirebaseCrashlytics.framework/run\"\nfi\n";
-		};
-		DAB1A184ED1FB4A446CF5BBC /* [CP-User] [RNFB] Core Configuration */ = {
+		F69ACEC66CD810443E68EDFA /* [CP-User] [RNFB] Core Configuration */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -353,7 +353,7 @@
 /* Begin XCBuildConfiguration section */
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 57FE9E835CE2D5A05E92A82C /* Pods-testing.debug.xcconfig */;
+			baseConfigurationReference = 4E1E9B8421555AA1EE54C542 /* Pods-testing.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = testing/testing.entitlements;
@@ -384,7 +384,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2867162C3D0FAFF97CDACF63 /* Pods-testing.release.xcconfig */;
+			baseConfigurationReference = 565FD2C5F6EEE72C84BA341C /* Pods-testing.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = testing/testing.entitlements;

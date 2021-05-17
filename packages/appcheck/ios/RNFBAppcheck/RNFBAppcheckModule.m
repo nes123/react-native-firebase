@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright (c) 2016-present Invertase Limited & Contributors
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,27 +15,24 @@
  *
  */
 
-export const APP_NATIVE_MODULE = 'RNFBAppModule';
+#import <React/RCTUtils.h>
+#import <Firebase/Firebase.h>
 
-export const DEFAULT_APP_NAME = '[DEFAULT]';
+#import "RNFBAppcheckModule.h"
+#import "RNFBApp/RNFBSharedUtils.h"
 
-export const KNOWN_NAMESPACES = [
-  'appcheck',
-  'auth',
-  'analytics',
-  'remoteConfig',
-  'crashlytics',
-  'database',
-  'inAppMessaging',
-  'firestore',
-  'functions',
-  'indexing',
-  'storage',
-  'dynamicLinks',
-  'messaging',
-  'naturalLanguage',
-  'ml',
-  'notifications',
-  'perf',
-  'utils',
-];
+
+@implementation RNFBAppcheckModule
+#pragma mark -
+#pragma mark Module Setup
+
+  RCT_EXPORT_MODULE();
+
+  - (dispatch_queue_t)methodQueue {
+    return dispatch_get_main_queue();
+  }
+
+#pragma mark -
+#pragma mark Firebase Appcheck Methods
+
+@end
