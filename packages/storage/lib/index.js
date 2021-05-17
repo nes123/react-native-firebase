@@ -15,7 +15,7 @@
  *
  */
 
-import { isNumber, isString } from '@react-native-firebase/app/lib/common';
+import { isAndroid, isNumber, isString } from '@react-native-firebase/app/lib/common';
 import {
   createModuleNamespace,
   FirebaseModule,
@@ -150,6 +150,25 @@ class FirebaseStorageModule extends FirebaseModule {
 
     this._maxDownloadRetryTime = time;
     return this.native.setMaxDownloadRetryTime(time);
+  }
+
+  useEmulator(host, port) {
+    if (!host || !isString(host) || !port || !isNumber(port)) {
+      throw new Error('firebase.storage().useEmulator() takes a non-empty host and port');
+    }
+    let _host = host;
+    if (isAndroid && _host) {
+      if (_host === 'localhost' || _host === '127.0.0.1') {
+        _host = '10.0.2.2';
+        // eslint-disable-next-line no-console
+        console.log(
+          'Mapping storage host to "10.0.2.2" for android emulators. Use real IP on real devices.',
+        );
+      }
+    }
+    console.error('USING EMULATOR ********************')
+    this.native.useEmulator(_host, port);
+    return [_host, port]; // undocumented return, just used to unit test android host remapping
   }
 }
 

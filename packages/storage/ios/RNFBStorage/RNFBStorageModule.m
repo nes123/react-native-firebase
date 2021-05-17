@@ -422,6 +422,18 @@ RCT_EXPORT_METHOD(putString:
 }
 
 /**
+ * @url https://firebase.google.com/docs/reference/js/firebase.storage.Storage#useEmulator
+ */
+RCT_EXPORT_METHOD(useEmulator:
+  (FIRApp *) firebaseApp
+    : (NSString *) url
+    :(nonnull NSString *)host
+    :(NSInteger)port
+) {
+  [[FIRStorage storageForApp:firebaseApp] useEmulatorWithHost: host port: port];
+}
+
+/**
  * @url N/A - RNFB Specific
  */
 RCT_EXPORT_METHOD(setTaskStatus:
